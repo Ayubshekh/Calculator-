@@ -93,7 +93,9 @@
     document.body.addEventListener("keypress",function(e){
         let res = document.querySelector("#disp")
        let charCode = e.keyCode;
+       console.log(e)
        let char = String.fromCharCode(charCode);
+       console.log(char)
        if ((charCode >= 48 && charCode <= 57) || charCode === 8 || charCode===13 || char==='+'|| char==='-' ||char==='*' || char === '/' ) {
       // Allow numbers and backspace and enter
       res.value += char;
